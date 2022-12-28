@@ -13,7 +13,7 @@ import { AuthContext } from '../navigation/AuthProvider';
 import { Container } from '../styles/FeedStyles';
 import SignInScreen from '../Screens/SignInScreen';
 import Geolocation from '@react-native-community/geolocation';
-  const HomeScreen = ({navigation})=>{
+  const AttendScreen = ({navigation})=>{
     const{user,logout} = useContext(AuthContext); 
     const [time, setTime] = React.useState();
       const [
@@ -135,56 +135,15 @@ import Geolocation from '@react-native-community/geolocation';
     }, []);
   
     return(
-      <SafeAreaView style={{flex: 1}}>
-      <View style={{alignItems:'center',justifyContent:'center'}}>
-        <Text> Hello {user.uid} </Text>
-        <Text>{time}</Text>
-        <Button title="Logout"
-        onPress={() => logout()}
-        />
-      </View>
-          <View style={styles.container}>
-            <View style={styles.container}>
-              <Image
-                source={{
-                  uri:
-                    'https://raw.githubusercontent.com/AboutReact/sampleresource/master/location.png',
-                }}
-                style={{width: 100, height: 100}}
-              />
-              <Text style={styles.boldText}>
-                {locationStatus}
-              </Text>
-              <Text
-                style={{
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  marginTop: 16,
-                }}>
-                Longitude: {currentLongitude}
-              </Text>
-              <Text
-                style={{
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  marginTop: 16,
-                }}>
-                Latitude: {currentLatitude}
-              </Text>
-              <View style={{marginTop: 20}}>
-                <Button
-                  title="Refresh"
-                  onPress={getOneTimeLocation}
-                />
-              </View>
-            </View>
-            </View>
-            </SafeAreaView>
+      <Text> {currentLatitude}
+      {currentLongitude}
+      {time}</Text>
+
       
     );
   };
 
-  export default HomeScreen;
+  export default AttendScreen;
 
 
   const styles = StyleSheet.create({

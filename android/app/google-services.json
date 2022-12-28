@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "842101983564",
+    "project_id": "attendh-fe5d5",
+    "storage_bucket": "attendh-fe5d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842101983564:android:8204f8c768aa1a9ca267e9",
+        "android_client_info": {
+          "package_name": "com.attendh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842101983564-oevmtkjkpgm9rgtj13nhcnnf4a0c9oqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr5QjcmUjFxaykY9nvOSsIUqD9DePTi74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842101983564-oevmtkjkpgm9rgtj13nhcnnf4a0c9oqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842101983564:android:1f98207eea684b51a267e9",
+        "android_client_info": {
+          "package_name": "com.attendh2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842101983564-oevmtkjkpgm9rgtj13nhcnnf4a0c9oqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr5QjcmUjFxaykY9nvOSsIUqD9DePTi74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842101983564-oevmtkjkpgm9rgtj13nhcnnf4a0c9oqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
