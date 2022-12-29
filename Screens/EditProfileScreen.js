@@ -60,7 +60,7 @@ function EditProfileScreen({navigation}) {
         firestore()
         .collection('Users')
         .doc(auth().currentUser.uid)
-        .set({
+        .update({
             fname: Fname,
             lname: Lname,
             gender: gender,
@@ -85,7 +85,6 @@ function EditProfileScreen({navigation}) {
       </View>
 
       <View style={{}}>
-        <Text style={styles.fontMenu}>Name</Text>
         <TextInput
           style={[styles.input,{alignSelf:'center'}]}
           label="Enter Name"
@@ -93,7 +92,6 @@ function EditProfileScreen({navigation}) {
           onChangeText={text => setFname(text)}
         />
 
-        <Text style={styles.fontMenu}>Surname</Text>
         <TextInput
           style={[styles.input,{alignSelf:'center'}]}
           label="Enter Last Name"
@@ -194,7 +192,7 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: 430,
     paddingBottom: 200,
-    backgroundColor: '#2D5283',
+    backgroundColor: '#4CD3E8',
   },
   headContainer: {
     backgroundColor: '#EC8C32',
@@ -226,7 +224,6 @@ const styles = StyleSheet.create({
     color: '#EC8C32',
     fontWeight: 'bold',
     fontStyle: 'italic',
-    // alignSelf: 'flex-start',
   },
   buttonContainer: {
     backgroundColor: '#EC8C32',
